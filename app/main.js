@@ -108,6 +108,44 @@ const renderEducation = () => {
             </div>`
     })
 }
+
+const renderProjects = () => {
+    const projectList = document.getElementById("project-list")
+    const projects = [
+        {
+            name: "Coca Cola home page",
+            url: "http://www.google.com",
+            status: 1,
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, obcaecati?",
+            tags: ["Eligue tu propia aventura", "En desarrollo"]
+
+        },
+        {
+            name: "Coca Cola home page",
+            url: "http://www.google.com",
+            status: 0,
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, obcaecati?",
+            tags: ["Eligue tu propia aventura", "En desarrollo", "Aprendiendo JS"]
+
+        }
+    ];
+    projects.forEach((project) => {
+        const arrayOfItemList = project.tags.map((tag) => `<li>${tag}</li>`);
+
+        const stringOfTags = arrayOfItemList.join("");
+        projectList.innerHTML += `
+        <div class="project">
+                    <div class="cont-header-project">
+                        <h3><a target="_blank" href="${project.url}">${project.name}</a></h3>
+                        <span class="${project.status === 1 ? "production" : ""}"></span>
+                    </div>
+                    <p>${project.description}</p>
+                    <ul> ${stringOfTags}</ul>
+                </div>
+        `
+    })
+}
 renderSocialLinks(),
     renderWorks(),
-    renderEducation()
+    renderEducation(),
+    renderProjects()

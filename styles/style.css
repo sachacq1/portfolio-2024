@@ -38,6 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    position: relative;
 }
 
 
@@ -143,6 +144,7 @@ section {
 
 .s-work h3,
 .s-work h4,
+.s-education h2,
 .s-education h3,
 .s-education h4 {
     margin-bottom: 5px;
@@ -165,7 +167,7 @@ section {
 
 .s-project article>div {
     padding: 5px;
-    border: 1px solid rgb(185, 185, 185);
+    border: 1px solid rgb(214, 214, 214);
     border-radius: 5px;
 }
 
@@ -176,7 +178,8 @@ section {
     align-items: center;
 }
 
-.s-project .cont-header-project span {
+.s-project .cont-header-project .production {
+    background-color: green;
     width: 10px;
     height: 10px;
     border-radius: 50%;

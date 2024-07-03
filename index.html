@@ -7,6 +7,7 @@
     <title>Portfolio | Sacha Quinteros</title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/utilis.css">
+    <link rel="stylesheet" href="/styles/theme-mode.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
@@ -47,9 +48,9 @@
             </article>
         </section>
         <section class="s-project">
-            <article class="project-list">
+            <article class="project-list" id="project-list">
 
-                <div class="project">
+                <!-- <div class="project">
                     <div class="cont-header-project">
                         <h3>mars.codes</h3>
                         <span class="project-status"></span>
@@ -114,11 +115,16 @@
                         <li>Elige tu propia aventura</li>
                         <li>En desarrollo</li>
                     </ul>
-                </div>
+                </div> -->
+            </article>
         </section>
-        </article>
+        <button id="theme-mode" class="theme-mode">
+            <i id="moon" class="bx bx-moon"> </i>
+            <i id="sun" class="bx bx-sun"></i>
+        </button>
     </main>
     <script src="/app/main.js"></script>
+    <script src="app/theme-mode.js"></script>
 </body>
 
 </html>
